@@ -1,0 +1,12 @@
+{
+    "_index": "lpg-learning-providers",
+    "_type": "learningProvider",
+    "_id": "learningProviderID",
+    "_score": 1.0,
+    "_source": {
+        "id": "learningProviderID",
+        "name": "learning-provider",
+        "termsAndConditions": [],
+        "cancellationPolicies": []
+    }
+}
