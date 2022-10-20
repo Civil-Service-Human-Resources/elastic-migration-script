@@ -30,7 +30,7 @@ class FileWorker:
     def __init__(self) -> None:
         pass
 
-    def write_json_file(file_name, json_content):
+    def write_json_file(self, file_name, json_content):
         with open(file_name, "w") as file:
             file.write(json.dumps(json_content))
 
@@ -71,6 +71,16 @@ class JobInterface:
         with open(f"migrated_{index}.json", "w") as file:
             self.file_worker.write_json_file(f"migrated_{index}.json", successful_docs)
             print(f"{len(successful_docs)} {index} documents succeeded")
+
+
+class LearningProviderJob(JobInterface):
+
+    def _get_index(self) -> str:
+        return "lpg-learning-providers"
+
+    def _format_data(self, provider) -> object:
+        return provider
+
 
 class MediaJob(JobInterface):
 
@@ -146,8 +156,13 @@ def run():
         creds.new_elastic_repo_username,
         creds.new_elastic_repo_password
     )
-    course_job = CourseJob(existing_client, new_client)
-    media_job = MediaJob(existing_client, new_client)
+
+    file_worker = FileWorker()
+
+    course_job = CourseJob(existing_client, new_client, file_worker)
+    media_job = MediaJob(existing_client, new_client, file_worker)
+    learning_provider_job = LearningProviderJob(existing_client, new_client, file_worker)
 
     course_job.run()
     media_job.run()
+    learning_provider_job.run()
