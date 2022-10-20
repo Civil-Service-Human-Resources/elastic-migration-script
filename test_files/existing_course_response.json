@@ -1,0 +1,171 @@
+{
+  "_index": "courses",
+  "_type": "course",
+  "_id": "courseID",
+  "_score": 1.0,
+  "_source": {
+    "owner": {
+      "profession": null,
+      "scope": "GLOBAL",
+      "supplier": null,
+      "organisationalUnit": null
+    },
+    "visibility": "PUBLIC",
+    "description": "description",
+    "audiences": [
+      {
+        "areasOfWork": [],
+        "eventId": null,
+        "requiredBy": 1640995200,
+        "name": "ppl",
+        "id": "PSSluqLqR4eXMPAnFuh9Qw",
+        "departments": ["co"],
+        "grades": [],
+        "interests": [],
+        "type": "REQUIRED_LEARNING",
+        "frequency": null
+      }
+    ],
+    "learningOutcomes": "",
+    "id": "courseID",
+    "shortDescription": "Short description ",
+    "learningProvider": {
+      "name": null,
+      "id": "3deWa4P8R_6qiYfxZ-pKFQ",
+      "cancellationPolicies": [],
+      "termsAndConditions": []
+    },
+    "title": "Test Course 134705",
+    "modules": [
+      {
+        "duration": null,
+        "productCode": null,
+        "cost": 5,
+        "moduleType": "face-to-face",
+        "description": "face to face session2",
+        "optional": false,
+        "id": "mod-f2f",
+        "type": "face-to-face",
+        "title": "Module 1 Edited2",
+        "events": [
+          {
+            "venue": {
+              "address": "Strand",
+              "location": "London",
+              "minCapacity": 5,
+              "availability": 5,
+              "capacity": 5
+            },
+            "joiningInstructions": null,
+            "cancellationReason": null,
+            "dateRanges": [
+              {
+                "date": [2022, 1, 1],
+                "startTime": [0, 0],
+                "endTime": [0, 0]
+              },
+              {
+                "date": [2022, 2, 1],
+                "startTime": [6, 0],
+                "endTime": [7, 0]
+              }
+            ],
+            "id": "Q4NB3YT3R3WhCdM5WDX9Ow",
+            "status": "Active"
+          },
+          {
+            "venue": {
+              "address": "Strand",
+              "location": "London",
+              "minCapacity": 5,
+              "availability": 5,
+              "capacity": 5
+            },
+            "joiningInstructions": null,
+            "cancellationReason": null,
+            "dateRanges": [
+              {
+                "date": [2018, 12, 16],
+                "startTime": [6, 0],
+                "endTime": [7, 45]
+              }
+            ],
+            "id": "e4QCe60-Qgi1TAx2ck7RcA",
+            "status": "Active"
+          },
+          {
+            "venue": {
+              "address": "Strand",
+              "location": "London",
+              "minCapacity": 5,
+              "availability": 5,
+              "capacity": 5
+            },
+            "joiningInstructions": null,
+            "cancellationReason": null,
+            "dateRanges": [
+              {
+                "date": [2018, 12, 15],
+                "startTime": [6, 0],
+                "endTime": [6, 15]
+              }
+            ],
+            "id": "h5Sr_KviTTC_X2qzurcLRg",
+            "status": "Active"
+          }
+        ],
+        "status": null
+      },
+      {
+        "duration": 60,
+        "cost": 0,
+        "moduleType": "link",
+        "description": "None",
+        "optional": false,
+        "id": "mod-link",
+        "type": "link",
+        "title": "A Link",
+        "url": "https://www.link.com",
+        "status": null
+      },
+      {
+        "duration": 60,
+        "cost": 0,
+        "moduleType": "file",
+        "description": "None",
+        "optional": false,
+        "id": "mod-file",
+        "type": "file",
+        "title": "A File",
+        "url": "https://file.com",
+        "status": null
+      },
+      {
+        "duration": 60,
+        "cost": 0,
+        "moduleType": "video",
+        "description": "None",
+        "optional": false,
+        "id": "mod-video",
+        "type": "video",
+        "title": "A video",
+        "url": "https://www.youtube.com",
+        "status": null
+      },
+      {
+        "duration": 60,
+        "cost": 0,
+        "moduleType": "elearning",
+        "description": "None",
+        "optional": false,
+        "id": "mod-elearning",
+        "type": "elearning",
+        "title": "A e-learning",
+        "url": "https://www.elearning.com",
+        "status": null
+      }
+    ],
+    "preparation": "",
+    "status": "Archived"
+  }
+}
