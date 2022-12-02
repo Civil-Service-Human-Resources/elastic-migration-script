@@ -3,3 +3,5 @@ __pycache__
 *_courses.json
 *_media.json
 *_lpg-learning-providers.json
+.cache
+.bash_history
